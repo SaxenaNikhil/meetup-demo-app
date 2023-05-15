@@ -26,6 +26,7 @@ function AllMeetupsPage () {
         <section>
             <h1>All Meetups</h1>
             <ul>
+                {/* Here we have created the meetup variable which is accessing the dummy data using the map JS6 function */}
                 {DUMMY_DATA.map((meetup) => {
                     return <li key={meetup.id}>{meetup.title}</li>
                 })}
