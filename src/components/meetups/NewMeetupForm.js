@@ -3,7 +3,8 @@ import { useRef } from "react";
 import Card from "../ui/Card";
 import classes from './NewMeetupForm.module.css';
 
-function NewMeetupForm () {
+//we are using props on this NewMeetupForm to send the data from this component to the parent component
+function NewMeetupForm (props) {
 
     //using refs / references to DOM elements to get the direct access to DOM element for this we will use 'useRef' hook from react.
     //here we will store the ref value in the titleInputRef and to connect this titleInputRef with the input field we will a special prop on the input field which is ref and will point it to the variable titleInputRef.
@@ -33,8 +34,10 @@ function NewMeetupForm () {
             description: enteredDescription
         }
 
-        //Here we will then send the data to the server which then stores the data in the database
-        console.log(meetupData);
+        //Here we will then send the data to the server which then stores the data in the database, so we will be sending this data using props to the parent component which in this case is NewMeetup.js file.
+        // console.log(meetupData);
+        //Now on props, we have some prop which actually get a function as a value, so we will make a custom function here which here is onAddMeetup and it will take the meetupData as an argument.
+        props.onAddMeetup(meetupData); 
     }
 
     return <Card>
