@@ -51,7 +51,7 @@ function NewMeetupForm (props) {
                 <input type="url" required id="image" ref={imageInputRef}/>
             </div>
             <div className={classes.control}>
-                <label htmlFor="address">Meetup Image</label>
+                <label htmlFor="address">Address</label>
                 <input type="text" required id="address" ref={addressInputRef}/>
             </div>
             <div className={classes.control}>
