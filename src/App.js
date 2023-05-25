@@ -6,6 +6,7 @@ import NewMeetupPage from './pages/NewMeetup';
 import FavoritePage from './pages/Favorite';
 import Layout from './components/layout/Layout';
 
+//here the name of the component should starts with the capital word in the name
 function App() {
   return (
     <Layout>

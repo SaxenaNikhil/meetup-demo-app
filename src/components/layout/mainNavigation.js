@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import classes from './mainNavigation.module.css';
 
 //This is a header for the page
-
+//here the name of the component should starts with the capital word in the name
 function MainNavigation () {
     return (
         <header className={classes.header}>
